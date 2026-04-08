@@ -10,7 +10,7 @@ class QuantityLengthTest {
 	private final double EPSILON = 1e-6;
 
 	@Test
-	void testEquality_YardToYard_SameValue() {
+	void testEquality_YardToYard_Sgit ameValue() {
 
 		QuantityLength q1 =
 				new QuantityLength(1.0, LengthUnit.YARD);
