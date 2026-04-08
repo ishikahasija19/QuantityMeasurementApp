@@ -1,5 +1,5 @@
 
-package com.qunantity.measurement.enums;
+package com.quantity.measurement.enums;
 
 public enum LengthUnit {
 
