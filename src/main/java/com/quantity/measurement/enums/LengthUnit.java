@@ -1,4 +1,3 @@
-
 package com.quantity.measurement.enums;
 
 public enum LengthUnit {
@@ -7,9 +6,9 @@ public enum LengthUnit {
 
     INCH(1.0/12),
 
-    YARD(3.0),
+    YARDS(3.0),
 
-    CM(0.0328084);
+    CENTIMETERS(0.0328084);
 
 
 
