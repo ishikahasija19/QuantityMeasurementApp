@@ -34,4 +34,4 @@ public class ApplicationConfig {
     public static int getIntProperty(String key) {
         return Integer.parseInt(properties.getProperty(key));
     }
-}
+};

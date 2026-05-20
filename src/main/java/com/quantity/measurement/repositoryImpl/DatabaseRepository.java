@@ -13,13 +13,12 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.quantity.measurement.entity.Entity;
-import com.quantity.measurement.Exception.DatabaseException;
-import com.quantity.measurement.Repository.Repository;
+import com.quantity.measurement.exception.DatabaseException;
+import com.quantity.measurement.repository.Repository;
 
 /**
  * JDBC-based repository implementation.
  */
-@org.springframework.stereotype.Repository
 public class DatabaseRepository implements Repository {
 
     private static final Logger LOGGER =

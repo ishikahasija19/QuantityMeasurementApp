@@ -21,9 +21,9 @@ import org.junit.jupiter.api.Test;
 import com.quantity.measurement.repositoryImpl.DatabaseRepository;
 import com.quantity.measurement.repositoryImpl.CacheRepository;
 import com.quantity.measurement.config.ApplicationConfig;
-import com.quantity.measurement.Database.ConnectionPool;
-import com.quantity.measurement.Repository.Repository;
-import com.quantity.measurement.ServiceImpl.ServiceImpl;
+import com.quantity.measurement.database.ConnectionPool;
+import com.quantity.measurement.repository.Repository;
+import com.quantity.measurement.serviceImpl.ServiceImpl;
 
 public class DatabaseIntegrationTest {
 

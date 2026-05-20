@@ -1,12 +1,12 @@
 package QuantityMeasurementApp;
 
-import com.quantity.measurement.Controller.Controller;
+import com.quantity.measurement.controller.Controller;
 import com.quantity.measurement.dto.QuantityDTO;
 import com.quantity.measurement.entity.Entity;
 import com.quantity.measurement.repositoryImpl.CacheRepository;
-import com.quantity.measurement.Repository.Repository;
+import com.quantity.measurement.repository.Repository;
 import com.quantity.measurement.service.Service;
-import com.quantity.measurement.ServiceImpl.ServiceImpl;
+import com.quantity.measurement.serviceImpl.ServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -14,14 +14,14 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class MeasurementApplicationTestsUC15 {
 
-    private Repository repository;
+    private Repository Repository;
     private Service service;
     private Controller controller;
 
     @BeforeEach
     void setUp() {
-        repository = CacheRepository.getInstance();
-        service = new ServiceImpl(repository);
+        Repository = CacheRepository.getInstance();
+        service = new ServiceImpl(Repository);
         controller = new Controller(service);
     }
 

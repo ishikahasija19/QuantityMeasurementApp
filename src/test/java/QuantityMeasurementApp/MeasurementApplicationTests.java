@@ -1947,6 +1947,7 @@ class MeasurementApplicationTests {
 		Quantity<LengthUnit> q2 = new Quantity<>(3.0, LengthUnit.FEET);
 		assertEquals(10.0 / 3.0, q1.divide(q2), EPSILON);
 	}
+
 	// ==========================================
 	// UC13 - ARCHITECTURAL REFACTORING TESTS
 	// ==========================================
@@ -2566,6 +2567,7 @@ class MeasurementApplicationTests {
 		assertTrue(VolumeUnit.LITRE.supportsArithmetic());
 		assertFalse(TemperatureUnit.CELSIUS.supportsArithmetic());
 	}
+
 	@Test
 	void testTemperatureValidateOperationSupport_Throws() {
 		assertThrows(UnsupportedOperationException.class,
@@ -2607,4 +2609,5 @@ class MeasurementApplicationTests {
 		assertTrue(TemperatureUnit.FAHRENHEIT instanceof IMeasurable);
 		assertTrue(TemperatureUnit.KELVIN instanceof IMeasurable);
 	}
+
 }
